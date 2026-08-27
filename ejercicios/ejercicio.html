@@ -1,0 +1,38 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="recibir.php" method="get" novalidate enctype="application/x-www-form-urlencoded">
+   <p>Escribe aquí tu petición <input type="text" name="mensaje"  autocomptete="off"></p>
+   <p><input type="submit" value="Enviar"></p>
+   <select name="pais">
+  <option value"es" > España</option>
+  <option value"mx" selected="selected"> México</option>
+  <option value"co"> Colombia</option>
+</select>
+<button>
+    <img src="imagen.png" alt=""width="70" height="35">
+</button>
+<p>Elegir memoria USB:<input  list="listaUsb"></p>
+<datalist id="listaUsb" >
+  <option value="8" >
+  <option value="16" >
+  <option value="32" >
+  <option value="64" >
+</datalist>
+    
+  <p>Please select your age:</p>
+  <input type="radio" id="age1" name="age" value="30">
+  <label for="age1">0 - 30</label><br>
+  <input type="radio" id="age2" name="age" value="60">
+  <label for="age2">31 - 60</label><br>  
+  <input type="radio" id="age3" name="age" value="100">
+  <label for="age3">61 - 100</label><br><br>
+  <input type="submit" value="Submit">
+</form>
+
+</body>
+</html>
