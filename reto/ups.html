@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ExpressGo | Envíos y logística</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <header class="navbar">
+
+        <div class="logo">
+            <div class="logo-icon">E</div>
+            <span>ExpressGo</span>
+        </div>
+
+        <nav class="nav-links">
+            <a href="#inicio">Inicio</a>
+            <a href="#enviar">Enviar</a>
+            <a href="#servicios">Servicios</a>
+            <a href="#empresa">Empresas</a>
+            <a href="#ayuda">Ayuda</a>
+        </nav>
+
+        <div class="nav-buttons">
+            <button class="login-btn">Iniciar sesión</button>
+            <button class="register-btn">Registrarse</button>
+        </div>
+
+        <button class="menu-btn" id="menuBtn">☰</button>
+
+    </header>
+
+
+    <!-- ================= HERO ================= -->
+
+    <main>
+
+        <section class="hero" id="inicio">
+
+            <div class="hero-content">
+
+                <span class="hero-tag">
+                    🚚 Envíos rápidos y seguros
+                </span>
+
+                <h1>
+                    Llevamos tus paquetes
+                    <span>a donde quieras.</span>
+                </h1>
+
+                <p>
+                    Envía, recibe y rastrea tus paquetes de forma
+                    rápida, sencilla y segura.
+                </p>
+
+                <!-- TRACKING -->
+
+                <div class="tracking-box">
+
+                    <div class="tracking-input">
+
+                        <span>🔍</span>
+
+                        <input
+                            type="text"
+                            id="trackingNumber"
+                            placeholder="Introduce tu número de guía"
+                        >
+
+                    </div>
+
+                    <button id="trackBtn">
+                        Rastrear paquete
+                    </button>
+
+                </div>
+
+                <p id="trackingResult" class="tracking-result"></p>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= ACCIONES ================= -->
+
+        <section class="actions">
+
+            <div class="section-title">
+
+                <span>¿QUÉ NECESITAS?</span>
+
+                <h2>
+                    Todo lo que necesitas para tus envíos
+                </h2>
+
+            </div>
+
+
+            <div class="action-grid">
+
+                <article class="action-card">
+
+                    <div class="action-icon">📦</div>
+
+                    <h3>Enviar un paquete</h3>
+
+                    <p>
+                        Crea tu envío y descubre nuestras
+                        opciones de entrega.
+                    </p>
+
+                    <a href="#enviar">Enviar ahora →</a>
+
+                </article>
+
+
+                <article class="action-card">
+
+                    <div class="action-icon">🔎</div>
+
+                    <h3>Rastrear un paquete</h3>
+
+                    <p>
+                        Consulta el estado de tu envío
+                        en cualquier momento.
+                    </p>
+
+                    <a href="#inicio">Rastrear →</a>
+
+                </article>
+
+
+                <article class="action-card">
+
+                    <div class="action-icon">💰</div>
+
+                    <h3>Calcular precio</h3>
+
+                    <p>
+                        Obtén una estimación del costo
+                        de tu envío.
+                    </p>
+
+                    <a href="#enviar">Calcular →</a>
+
+                </article>
+
+
+                <article class="action-card">
+
+                    <div class="action-icon">📍</div>
+
+                    <h3>Encontrar una oficina</h3>
+
+                    <p>
+                        Encuentra el punto de servicio
+                        más cercano.
+                    </p>
+
+                    <a href="#ayuda">Buscar →</a>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= SERVICIOS ================= -->
+
+        <section class="services" id="servicios">
+
+            <div class="section-title">
+
+                <span>NUESTROS SERVICIOS</span>
+
+                <h2>
+                    Soluciones para cada necesidad
+                </h2>
+
+            </div>
+
+
+            <div class="service-grid">
+
+                <article class="service-card">
+
+                    <div class="service-image image-one">
+                        <span>📦</span>
+                    </div>
+
+                    <div class="service-content">
+
+                        <h3>Envíos nacionales</h3>
+
+                        <p>
+                            Envía tus paquetes dentro del país
+                            con diferentes opciones de velocidad.
+                        </p>
+
+                        <button>
+                            Conocer más
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+                <article class="service-card">
+
+                    <div class="service-image image-two">
+                        <span>🌎</span>
+                    </div>
+
+                    <div class="service-content">
+
+                        <h3>Envíos internacionales</h3>
+
+                        <p>
+                            Conecta con clientes y familiares
+                            alrededor del mundo.
+                        </p>
+
+                        <button>
+                            Conocer más
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+                <article class="service-card">
+
+                    <div class="service-image image-three">
+                        <span>🏢</span>
+                    </div>
+
+                    <div class="service-content">
+
+                        <h3>Soluciones empresariales</h3>
+
+                        <p>
+                            Herramientas diseñadas para hacer
+                            crecer tu negocio.
+                        </p>
+
+                        <button>
+                            Conocer más
+                        </button>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= EMPRESAS ================= -->
+
+        <section class="business" id="empresa">
+
+            <div class="business-image">
+
+                <div class="business-box">
+                    🚚
+                </div>
+
+            </div>
+
+
+            <div class="business-content">
+
+                <span>SOLUCIONES PARA EMPRESAS</span>
+
+                <h2>
+                    Haz crecer tu negocio
+                    con nosotros.
+                </h2>
+
+                <p>
+                    Simplifica tus operaciones de envío,
+                    mejora la experiencia de tus clientes
+                    y lleva tu negocio al siguiente nivel.
+                </p>
+
+                <ul>
+
+                    <li>✓ Seguimiento en tiempo real</li>
+                    <li>✓ Tarifas competitivas</li>
+                    <li>✓ Gestión de múltiples envíos</li>
+                    <li>✓ Soporte especializado</li>
+
+                </ul>
+
+                <button class="primary-btn">
+                    Conocer soluciones
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= ESTADÍSTICAS ================= -->
+
+        <section class="stats">
+
+            <div>
+                <strong>200+</strong>
+                <span>Países y territorios</span>
+            </div>
+
+            <div>
+                <strong>20M+</strong>
+                <span>Paquetes entregados</span>
+            </div>
+
+            <div>
+                <strong>98%</strong>
+                <span>Entregas a tiempo</span>
+            </div>
+
+            <div>
+                <strong>24/7</strong>
+                <span>Seguimiento online</span>
+            </div>
+
+        </section>
+
+
+        <!-- ================= CTA ================= -->
+
+        <section class="cta" id="enviar">
+
+            <div>
+
+                <span>¿LISTO PARA ENVIAR?</span>
+
+                <h2>
+                    Tu paquete está a solo
+                    unos clics de distancia.
+                </h2>
+
+            </div>
+
+            <button class="cta-button">
+                Crear un envío →
+            </button>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer id="ayuda">
+
+        <div class="footer-main">
+
+            <div class="footer-brand">
+
+                <div class="logo">
+
+                    <div class="logo-icon">E</div>
+
+                    <span>ExpressGo</span>
+
+                </div>
+
+                <p>
+                    Soluciones de envío rápidas,
+                    seguras y confiables.
+                </p>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h4>Servicios</h4>
+
+                <a href="#">Enviar</a>
+                <a href="#">Rastrear</a>
+                <a href="#">Precios</a>
+                <a href="#">Empresas</a>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h4>Ayuda</h4>
+
+                <a href="#">Centro de ayuda</a>
+                <a href="#">Preguntas frecuentes</a>
+                <a href="#">Contacto</a>
+                <a href="#">Oficinas</a>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h4>Empresa</h4>
+
+                <a href="#">Sobre nosotros</a>
+                <a href="#">Trabaja con nosotros</a>
+                <a href="#">Noticias</a>
+                <a href="#">Privacidad</a>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <span>
+                © 2026 ExpressGo. Todos los derechos reservados.
+            </span>
+
+            <div>
+                <a href="#">Facebook</a>
+                <a href="#">Instagram</a>
+                <a href="#">LinkedIn</a>
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <script src="app.js"></script>
+
+</body>
+</html>
